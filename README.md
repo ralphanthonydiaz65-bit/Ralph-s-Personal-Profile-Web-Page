@@ -6,6 +6,9 @@
 - **Location:** [Your location]
 - **Contact:** [Your contact information]
 
+## About Me
+Hi! I'm Ralph, a passionate learner and aspiring developer. I believe in continuous growth, hard work, and maintaining a balance between my personal and professional life.
+
 My Hobbies
 <ul type="square">
     <li>(Playing Mobile Games)</li>
