@@ -1,4 +1,11 @@
-# Ralph-s-Personal-Profile-Web-Page
+# Ralph's Personal Profile Web Page
+
+## Personal Information
+- **Name:** Ralph
+- **Interests:** Technology, cooking, gaming, and personal development
+- **Location:** [Your location]
+- **Contact:** [Your contact information]
+
 My Hobbies
 <ul type="square">
     <li>(Playing Mobile Games)</li>
@@ -7,6 +14,7 @@ My Hobbies
     <li>(Cleaning)</li>
     <li>(Studying New Things)</li>
 </ul>
+
 My Favorite Foods
 <ol type="A">
     <li>(Fried Chicken)</li>
@@ -15,12 +23,14 @@ My Favorite Foods
     <li>(Lumpia)</li>
     <li>(Lechon)</li>
 </ol>
+
 My Educational Goals
 <ol start="5">
     <li>(To make my Family proud)</li>
     <li>(To be stable and financial of my self)</li>
     <li>(To help my family in needs)</li>
 </ol>
+
 My Daily Routine
 <ol type="I">
     <li>(Cleaning the house everyday)</li>
@@ -30,6 +40,7 @@ My Daily Routine
     <li>(Going to church so our father can guide us through our hard challanges and journey)</li>
     <li>(Calling with my love ones)</li>
 </ol>
+
 My Countdown to Success
 <ol reversed>
     <li>(Once step at a time)</li>
@@ -38,3 +49,6 @@ My Countdown to Success
     <li>(Be patient)</li>
     <li>(Clock only runs when the right time is come)</li>
 </ol>
+
+## About Me
+Hi! I'm Ralph, a passionate learner and aspiring developer. I believe in continuous growth, hard work, and maintaining a balance between my personal and professional life. I value family, faith, and the importance of taking things one step at a time.
