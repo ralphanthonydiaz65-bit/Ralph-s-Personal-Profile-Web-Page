@@ -51,4 +51,11 @@ My Countdown to Success
 </ol>
 
 ## About Me
-Hi! I'm Ralph, a passionate learner and aspiring developer. I believe in continuous growth, hard work, and maintaining a balance between my personal and professional life. I value family, faith, and the importance of taking things one step at a time.
+Hi! I'm Ralph — a curious and hardworking learner with a growing interest in web development and technology. I enjoy building small projects to practice HTML, CSS, and JavaScript, and I like exploring new tools and techniques that help me learn faster. I value family, faith, and personal growth, and I aim to balance my time between improving my technical skills and supporting the people I care about.
+
+My goals right now are to:
+- Improve my programming fundamentals and build a portfolio of projects.
+- Find opportunities to collaborate and learn from others.
+- Gain steady, meaningful work that helps me support my family.
+
+When I'm not coding, I love cooking, playing mobile games, and discovering new hobbies. I'm approachable and open to feedback — if you'd like to connect, collaborate, or just say hello, please reach out at the contact info above.
