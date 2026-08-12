@@ -1,70 +1,145 @@
-<form>
-    <label>Full Name:</label>
-    <input type="text">
-    <br><br>
-    <label>Email Address:</label>
-    <input type="email">
-    <br><br>
-    <label>Gender:</label>
-    <input type="radio" name="gender">
-    Male
-    <input type="radio" name="gender">
-    Female
-    <input type="radio" name="gender">
-    LBGTQ
-    <br><br>
-    <label>Interests:</label>
-    <input type="checkbox">
-    Music 
-    <input type="checkbox">
-    Staying at comlab
-    <input type="checkbox">
-    Listening to music
-    <input type="checkbox">
-    Alone
-    <br><br>
-    <label>Purpose of visit:</label>
-    <select>
-        <option></option>
-        <option>wanna say hi</option>
-        <option>just checking your work</option>
-        <option>your bored?</option>
-        <option>Nice Coding</option>
-        <option>Are you good?</option>
-        <option>Hows your day?</option>
-    </select>
-    <br><br>
-    <label>Skills:</label>
-    <input type="checkbox">
-    reading
-    <input type="checkbox">
-    Coding
-    <input type="checkbox">
-    Gaming again
-    <input type="checkbox">
-    Coding & Programming
-    <input type="checkbox">
-    Running
-    <input type="checkbox">
-    Sitting while coding
-    <input type="checkbox">
-    Competition on coding
-    <br><br>
-    <label>Messsage:</label>
-    <textarea rows="4" cols="80"></textarea>
-    <br><br>
-    <input type="submit">
-    <input type="reset">
-    </form>
+<html lang="en">
 
-    <hr>
-<P>Wanna see the past? Click these links below. :)</P>
-<br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Me</title>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script>
+        emailjs.init({
+            publicKey: "d2qtMLP2W8dQh0WOk"
+        });
+    </script>
+</head>
+
+<body>
+
+    <h1>Contact Me</h1>
+
     <nav>
-        <a href="index.html">Introductions</a> |
+        <a href="index.html">Home</a> |
         <a href="about.html">About Me</a> |
-        <a href="hobbies.html">My Hobbies</a> |
-        <a href="favorites.html">My Favorites</a> |
-        <a href="goals.html">My Goals</a> |
+        <a href="hobbies.html">Hobbies</a> |
+        <a href="favorites.html">Favorites</a> |
+        <a href="goals.html">Goals</a> |
         <a href="contact.html">Contact Me</a>
     </nav>
+
+    <hr>
+
+    <form id="contact-form">
+
+        <!-- Name -->
+        <label for="name">Full Name:</label>
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+        >
+
+        <br><br>
+
+        <!-- Gmail -->
+        <label for="email">Gmail:</label>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your Gmail"
+            required
+        >
+
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+        <br>
+
+        <input type="radio" id="male" name="gender" value="Male" required>
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="gay" name="gender" value="Gay">
+        <label for="gay">Gay</label>
+
+        <input type="radio" id="lesbian" name="gender" value="Lesbian">
+        <label for="lesbian">Lesbian</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <!-- Strand -->
+        <label for="strand">Strand:</label>
+
+        <select id="strand" name="strand" required>
+            <option value="">Select Strand</option>
+            <option value="ICT">ICT</option>
+            <option value="STEM">STEM</option>
+            <option value="ABM">ABM</option>
+            <option value="GAS">GAS</option>
+            <option value="HUMSS">HUMSS</option>
+        </select>
+
+        <br><br>
+
+        <!-- Message -->
+        <label for="message">Message:</label>
+        <br>
+
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="50"
+            placeholder="Type your message here..."
+            required
+        ></textarea>
+
+        <br><br>
+
+        <button type="submit">Send Message</button>
+        <button type="reset">Clear Form</button>
+
+    </form>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            emailjs.sendForm(
+                "service_pjh0uuc",
+                "template_hwwchig",
+                this
+            )
+            .then(function() {
+
+                alert("Message sent successfully!");
+
+                document.getElementById("contact-form").reset();
+
+            })
+            .catch(function(error) {
+
+                alert("Message failed to send. Please try again.");
+
+                console.error("EmailJS Error:", error);
+
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
